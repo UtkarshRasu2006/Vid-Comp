@@ -5,10 +5,10 @@ from decouple import config
 
 try:
     APP_ID = config("7414019", cast=int)
-    API_HASH = config("7414019")
-    BOT_TOKEN = config("6899043837:AAE-8GyW26E2kuQrolRK2QQIUQiglnMhj_s")
+    API_HASH = config("API_HASH")
+    BOT_TOKEN = config("BOT_TOKEN")
     DEV = 1350488685
-    OWNER = config("GeekLuffy")
+    OWNER = config("OWNER")
     ffmpegcode = ["-preset faster -c:v libx265 -s 854x480 -x265-params 'bframes=8:psy-rd=1:ref=3:aq-mode=3:aq-strength=0.8:deblock=1,1' -metadata 'title=Encoded By TGVid-Comp (https://github.com/Zylern/TGVid-Comp)' -pix_fmt yuv420p -crf 30 -c:a libopus -b:a 32k -c:s copy -map 0 -ac 2 -ab 32k -vbr 2 -level 3.1 -threads 1"]
     THUMBNAIL = config("THUMBNAIL", default="https://telegra.ph//file/1ee9048edc98aa7e1e32c.jpg")
 except Exception as e:
